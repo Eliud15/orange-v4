@@ -1,0 +1,90 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #E67E22;
+}
+header{
+    padding-bottom: 5px;
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1{
+    -webkit-text-stroke: 2px black;
+    color: white;
+    font-size: 50px;
+    margin-top: 20px;
+  cursor: default;
+  transform: translateX(100px);
+}
+h6{
+    position: absolute;
+    transform: translateX(100px);
+}
+.icon{
+    float: left;
+    left: 5px;
+    position: absolute;
+     width: 250px;
+    height: 150px;
+    margin-top: -15px;
+    margin-left: -70px;
+    
+   
+}
+div{
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    height: 400px;
+    justify-content: center;
+    margin: 0px auto;
+}
+form{
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+    /*border: solid 3px black; */
+    padding: 10px;
+    width: 48%;
+    border-radius: 1rem;
+    margin-top: 50px;
+    background-color: white;
+    box-shadow: 10px 10px 10px black ;
+    border: 2px solid black;
+}
+.inputs{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    border: none;
+   border-bottom: solid 2px silver;
+   background:none;
+   outline: none;
+   box-sizing: border-box;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.inputs::placeholder{
+color: black;
+}
+.inputs:hover{
+border: none;
+   border-bottom: 2px solid black;
+   
+}
+#send{
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(224, 140, 14);
+    color: white;
+    cursor: pointer;
+   
+}
+#send:hover{
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(224, 140, 14);
+    cursor: pointer;
+    color: rgb(56, 56, 56);
+}

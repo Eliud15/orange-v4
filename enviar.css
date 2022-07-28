@@ -1,0 +1,33 @@
+body{
+    background-color: #2ECC71;
+    text-align: center;
+}
+.btn{
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid white;
+    color: black;
+    cursor: pointer;
+    display: flex;
+}
+h1{
+    margin-top: 220px;
+    display: flex;
+}
+@media (max-width:696px) {
+    .btn{
+        background-color: white;
+        padding: 10px;
+        border-radius: 10px;
+        border: 2px solid white;
+        color: black;
+        cursor: pointer;
+        display: flex;
+    }
+    h1{
+        margin-top: 220px;
+        font-size: 100%;
+    }
+    
+}

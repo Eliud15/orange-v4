@@ -1,0 +1,417 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    
+}
+header{
+     background-color: #E67E22;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: fixed;
+    top: 0px;
+    z-index: 1200;
+    box-shadow: -10px 10px 7px black ;
+}
+.cerrar{
+    position: absolute;
+    float: right;
+    right: 10px;
+    margin-top: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    border: 2px solid black;
+    border-radius: 2rem;
+    text-decoration: none;
+    padding: 3px;
+    background: white;
+}
+
+h1{
+    -webkit-text-stroke: 2px black;
+    color: white;
+    font-size: 40px;
+    margin-top: 20px;
+  cursor: default;
+    transform: translateX(100px);
+}
+.icon{
+    float: left;
+    left: 5px;
+    position: absolute;
+     width: 250px;
+    height: 150px;
+    margin-top: -20px;
+    margin-left: -70px;
+    z-index: 10000;
+   
+}
+h6{
+    cursor: pointer;
+        position: absolute;
+        transform: translateX(240px);
+}
+h4{
+    display: inline-block !important;
+    width: auto !important;
+    margin-left: 5px !important;
+    background: #E67E22  !important;
+    padding: 10px !important;
+    border-bottom-left-radius: 10px !important; 
+    border-top-right-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+    margin-bottom: 20px !important;
+    word-break: break-word !important;
+    cursor: default;
+    border: 2px solid black;
+}
+/* Cerrar sesion */
+.salir{
+    width: 350px;
+    background: #E67E22;
+    height: 130px;
+    position: sticky;
+    border-radius: 10px;
+    align-content: center;
+   top: 10px;
+    margin: 0px auto;
+    visibility: hidden;
+    z-index: 5200;
+    margin-bottom: -150px;
+    border: 2px solid black;
+    
+    
+}
+.aparecer{
+    animation-duration: 1s;
+    animation-name: aparecer;
+}
+.nohayresultado{
+    display: flex;
+    color: white;
+    margin-left: 30px;
+    margin-top: 15px;
+    text-align: center;
+}
+.cancelar{
+    background:white;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    position: absolute;
+    float: right;
+    right: 200px;
+    margin-top: 70px;
+    border:solid black 2px;
+    cursor: pointer;
+}
+.aceptar{
+    background:white;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    position: absolute;
+    float: right;
+    right: 70px;
+    margin-top: 70px;
+    border:solid black 2px;
+    cursor: pointer;
+}
+.cancelar:hover,.aceptar:hover{
+    background: rgb(175, 174, 174);
+}
+.cerrars{
+    text-align: center;
+    position: absolute;
+    margin-left: 60px;
+    color: black;
+    cursor: default;
+}
+main{
+     margin-top: 110px;
+     flex-wrap: wrap;
+     width: 80%;
+     height: 100%;
+     margin-bottom: 100px;
+}
+.areamensaje{
+    height: auto;
+    background-color: rgb(218, 218, 218);
+    margin-bottom: 70px;
+    padding: 3px;
+    border-radius: 1rem;
+} 
+.contfile{
+    margin-left: 10px;
+    margin-top: -30px;
+    float: right;
+    right: 10px;
+    position: absolute;
+    display: flex;
+    width: 30px;
+    height: 20px;
+    }
+/*
+#file{
+    width: 40px;
+    height: 50px;
+    margin: 0px auto;
+    background: #E67E22;
+    padding: 10px;
+    border: none;
+    z-index: 500;
+    opacity: 0;
+   
+}*/
+#mensaje{
+    width: 300px;
+    height: 30px;
+    margin: 0px auto;
+    margin-top: 40px;
+    border-radius: 2rem;
+    outline: none;
+    border: 2px solid black;
+}
+#mensaje::placeholder{
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#enviar{
+   
+    height: 30px;
+    margin: 0px auto;
+    margin-top: 43px;
+    float: right;
+    right: 10px;
+    position: absolute;
+    border: 2px solid black;
+    border-radius: 2rem;
+    padding: 5px;
+    cursor: pointer;
+}
+#actualizar{
+    height: 30px;
+    margin: 0px auto;
+    margin-top: 43px;
+    float: left;
+    left:  10px;
+    position: absolute;
+    border: 2px solid black;
+    border-radius: 2rem;
+    padding: 5px;
+    cursor: pointer;
+}
+footer{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: #E67E22;
+    position: fixed;
+    bottom: 0px;
+    box-shadow: 0px -10px 7px black ;
+    
+}
+form{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: #E67E22;
+    position: fixed;
+    bottom: 0px;
+}
+#nombre{
+    height: 30px;
+    margin: 0px auto;
+    margin-top: 43px;
+    float: right;
+    right: 10px;
+    position: absolute;
+    border: 2px solid black;
+    border-radius: 2rem;
+    padding: 5px;
+}
+@media (max-width:632px) {
+    main{
+        height: 100%;
+         margin-top: 90px;
+         display: block;
+         width: 80%;
+    }
+    
+}
+@media (max-width:356px) {
+    
+    .salir{
+        width: 200px;
+        background: #E67E22;
+        height: 130px;
+        position: sticky;
+        border-radius: 10px;
+        align-content: center;
+       top: 10px;
+        margin: 0px auto;
+        visibility: hidden;
+        z-index: 5200;
+        margin-bottom: -150px;
+        border: 2px solid black;
+    }
+    .nohayresultado{
+        display: flex;
+        color: white;
+        margin-left: -30px;
+        margin-top: 15px;
+        text-align: center;
+    }
+    .cancelar{
+        background:white;
+        padding: 8px;
+        border: none;
+        border-radius: 5px;
+        color: black;
+        position: absolute;
+        float: right;
+        right: 20px;
+        margin-top: 70px;
+        border:solid black 2px;
+    }
+    .aceptar{
+        background:white;
+        padding: 8px;
+        border: none;
+        border-radius: 5px;
+        color: black;
+        position: absolute;
+        float: right;
+        right: 110px;
+        margin-top: 70px;
+        border:solid black 2px;
+    }
+    .cerrars{
+        text-align: center;
+        position: absolute;
+        margin-left: 60px;
+        color: black;
+    }
+}
+@media (max-width:490px) {
+    
+    #mensaje{
+        width: 200px;
+        height: 30px;
+        margin-top: 40px;
+        border-radius: 2rem;
+        outline: none;
+        border: 2px solid black;
+    }
+}
+@media (max-width:386px) {
+    
+    #mensaje{
+        width: 130px;
+        height: 30px;
+        float: right;
+        right: 110px;
+        position: absolute;
+        margin-top: 40px;
+        border-radius: 2rem;
+        outline: none;
+        border: 2px solid black;
+    }
+    #actualizar{
+        height: 30px;
+        margin: 0px auto;
+        margin-top: 43px;
+        float: left;
+        left:  10px;
+        position: absolute;
+        border: 2px solid black;
+        border-radius: 2rem;
+        padding: 5px;
+    }
+    
+}
+@media (max-width:344px) {
+    
+    #mensaje{
+        width: 140px;
+        height: 30px;
+        float: right;
+        right: 70px;
+        position: absolute;
+        margin-top: 40px;
+        border-radius: 2rem;
+        outline: none;
+        border: 2px solid black;
+    }
+    
+}
+
+@media (max-width:308px) {
+    
+    #mensaje{
+        width: 120px;
+        height: 30px;
+        float: right;
+        right: 70px;
+        position: absolute;
+        margin-top: 40px;
+        border-radius: 2rem;
+        outline: none;
+        border: 2px solid black;
+    }
+    
+}
+@media (max-width:270px) {
+    
+    #mensaje{
+        width: 120px;
+        height: 30px;
+        margin-top: 40px;
+        border-radius: 2rem;
+        outline: none;
+        border: 2px solid black;
+    }
+ 
+}
+@media (max-width:288px) {
+    #mensaje{
+        width: 90px;
+        height: 30px;
+        float: right;
+        right: 70px;
+        position: absolute;
+        margin-top: 40px;
+        border-radius: 2rem;
+        outline: none;
+        border: 2px solid black;
+    }
+}
+@media (max-width:256px) {
+
+#actualizar{
+    display: none;
+}
+#mensaje{
+    width: 120px;
+    height: 30px;
+    float: left;
+    left: 5px;
+    position: absolute;
+    margin-top: 40px;
+    border-radius: 2rem;
+    outline: none;
+    border: 2px solid black;
+}
+}
+@keyframes aparecer{
+    from{
+        visibility: 0;
+        transform: translateY(-100px);
+    }
+    to{
+        visibility: 1;
+    }
+}
