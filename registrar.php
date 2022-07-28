@@ -9,20 +9,33 @@
     <title>Registro de usuario</title>
 </head>
 <body>
+    
     <?php
 
- $usuario=$_POST["usuario"];
- $contrasena=$_POST["contrasena"];
+$contrasena=$_POST["contrasena"];
 
-$conectar=mysqli_connect("localhost","root","","registros");
+if (!empty($contrasena)){
+    $conectar=mysqli_connect("localhost","root","","registros");
+    $resultado=mysqli_query($conectar,"SELECT * FROM  datos WHERE contrasena='$contrasena' ");
+    if ($resultado->num_rows >0) {
+        echo("<center><h1>Contraseña en uso <br>por favor ingresa  una contraseña nueva</h1> <br> <a href='registrarse.html'>Volver</a> </center>");
+       
+    }
+    else{
+        $usuario=$_POST["usuario"];
+        $contrasena=$_POST["contrasena"];
 
-$usuario=mysqli_real_escape_string($conectar,$usuario);
-$contrasena=mysqli_real_escape_string($conectar,$contrasena);
+    $conectar=mysqli_connect("localhost","root","","registros");
 
-$resultado=mysqli_query($conectar,'INSERT INTO datos(usuario,contrasena) VALUES ("'.$usuario.'","'.$contrasena.'")');
+    $usuario=mysqli_real_escape_string($conectar,$usuario);
+    $contrasena=mysqli_real_escape_string($conectar,$contrasena);
 
-echo("<center><h1>Registro exitoso</h1> </center>");
-echo("<center><a href='login.php'>Ingresar</a></center>");
+    $resultado=mysqli_query($conectar,'INSERT INTO datos(usuario,contrasena) VALUES ("'.$usuario.'","'.$contrasena.'")');
+
+    echo("<center><h1>Registro exitoso</h1> </center>");
+    echo("<center><a href='login.php'>Ingresar</a></center>");
+    }
+};
 ?>
 </body>
 </html>
